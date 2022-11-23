@@ -78,10 +78,6 @@ p {
     font-size: 1em;
 }
 
-nav {
-   
-}
-
 nav a {
     display: inline-block;
     margin: 0 0.4em;
@@ -167,7 +163,7 @@ footer {
 }
 
 .hero p {
-    margin-bottom: 2em;
+    margin-bottom: 1.6em;
 }
 
 .btn {
@@ -181,9 +177,14 @@ footer {
 }
 
 .function-title {
-    padding: 0 4em;
+    padding: 0 2em;
     color: var(--grey-color);
     font-style: oblique 6deg;
+}
+@media screen and (max-width: 900px) {
+    .function-title{
+        padding: 0 4em;
+    }
 }
 
 .function-box p {
@@ -292,11 +293,17 @@ footer {
 
 .title {
     display: inline-block;
+    
 }
 
 .title:after {
     content: '';
     display: inline-block;
+
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
     height: 2px;
     width: 6em;
     background-color: var(--pink-color);
