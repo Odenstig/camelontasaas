@@ -47,15 +47,11 @@ html {
 }
 
 .container-large {
-    width: 1200px;
+    width: 1300px;
 }
 
 .container-medium {
-    width: 520px;
-}
-
-.container-small {
-    width: 520px;
+    width: 620px;
 }
 
 .container-narrow {
@@ -140,23 +136,16 @@ footer {
     background-size: cover;
 }
 
-.prices {
+.price-box {
+    padding: var(--container-padding);
+    background-color: var(--light-color);
+}
 
+.blog-box {
+    background-color: #fff;
 }
 
 /* elements */
-
-/* remake to psuedo elements */
-.quote-mark{
-    -webkit-filter: invert(19%) sepia(75%) saturate(5310%) hue-rotate(331deg) brightness(94%) contrast(97%);
-            filter: invert(19%) sepia(75%) saturate(5310%) hue-rotate(331deg) brightness(94%) contrast(97%);
-    width: 4vw;
-
-    margin: 40px;
-}
-.quote-mark-ud{
-    rotate: 180deg;
-}
 
 .header-text-deco {
     color: var(--pink-color);
@@ -176,15 +165,48 @@ footer {
 
 }
 
+.quote{
+    display: inline-flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.quote:before {
+    content: url(/images/quote-mark.svg);
+    display: inline-flex;
+
+    rotate: 180deg;
+    -webkit-filter: invert(19%) sepia(75%) saturate(5310%) hue-rotate(331deg) brightness(94%) contrast(97%);
+    filter: invert(19%) sepia(75%) saturate(5310%) hue-rotate(331deg) brightness(94%) contrast(97%);
+    
+    width: 4em;
+    color: var(--pink-color);
+
+    padding: 1em;
+    
+}
+
+.quote:after {
+    content: url(/images/quote-mark.svg);
+    display: inline-flex;
+
+    -webkit-filter: invert(19%) sepia(75%) saturate(5310%) hue-rotate(331deg) brightness(94%) contrast(97%);
+    filter: invert(19%) sepia(75%) saturate(5310%) hue-rotate(331deg) brightness(94%) contrast(97%);
+
+    width: 4em;
+    color: var(--pink-color);
+
+    padding: 1em;
+}
+
 .function-title {
-    padding: 0 2em;
+    
     color: var(--grey-color);
     font-style: oblique 6deg;
 }
 @media screen and (max-width: 900px) {
-    .function-title{
-        padding: 0 4em;
-    }
 }
 
 .function-box p {
@@ -204,11 +226,98 @@ footer {
     width: 150px;
     height: 150px;
     
-    padding: 50px;
+    padding: 2.7777777777777777em;
     border-radius: 100px;
     border-style: solid;
 
-    margin-bottom: 20px;
+    margin: 1.1111111111111112em;
+}
+
+.price-box p {
+    color: var(--grey-color)
+}
+
+.price-card {
+    display: inline-block;
+    width: 220px;
+    height: auto;
+
+    margin: 1em 0.5em;
+    
+}
+
+.price-card-top {
+    background-color: var(--grey-color);
+    padding: 1.1111111111111112em 0;
+}
+
+.price-card-top h1 {
+    font-size: 2.4em;
+    line-height: normal;
+}
+.price-card-top span {
+    font-size: 0.5em;
+    margin-left: 0.2222222222222222em;
+    line-height: normal;
+}
+.price-card-top p {
+    font-size: 0.75em;
+    color: var(--light-color);
+
+    line-height: normal;
+}
+
+.price-btn {
+    background-color: var(--pink-color);
+
+    font-size: 0.85em;
+
+    display: block;
+    padding: 0.5em 2em;
+
+    width: 75%;
+
+    border-radius: 30px;
+}
+
+.price-card-middle {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, var(--grey-color) 50%);
+    height: 2.7777777777777777em;
+}
+
+.badge {
+    background-color: var(--light-color);
+    font-size: 0.85em;
+
+    display: block;
+    padding: 0.5em 2em;
+
+    width: 75%;
+
+    border-radius: 30px;
+}
+
+.price-card-bottom {
+    display: inline-block;
+    background-color: #fff;
+    padding-bottom: 1.1111111111111112em;
+}
+
+.price-card-bottom-text {
+    padding: 1.1111111111111112em;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.price-card-bottom p {
+    font-size: 0.75em;
+    line-height: 2;
+}
+
+.blog-box p {
+    color: var(--grey-color);
 }
 
 /* utils */
@@ -234,8 +343,12 @@ footer {
     -webkit-box-pack: stretch;
     -ms-flex-pack: stretch;
     justify-content: stretch;
-
+    
     flex-wrap: wrap;
+}
+
+.flex-evenly{
+    justify-content: space-evenly;
 }
 
 .flex-col {
@@ -251,9 +364,7 @@ footer {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-
-    flex-wrap: wrap;
+    justify-content: stretch;
 }
 
 .hover-anim {
@@ -292,20 +403,22 @@ footer {
 }
 
 .title {
-    display: inline-block;
+    display: inline-flex;
+    
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
     
 }
 
 .title:after {
     content: '';
-    display: inline-block;
-
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-
+    display: inline-flex;
     height: 2px;
     width: 6em;
     background-color: var(--pink-color);
-    margin-bottom: 14px;
+
+    margin: 0.75em 0;
+    
 }

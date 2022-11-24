@@ -15,19 +15,19 @@
     <header class="center-text">
         <div class="container container-large fw-700 flex-row">
 
-            <div class="hover-anim">
-                <h2 class="header-text-deco flex-row" style="flex: 1">
+            <div class="hover-anim flex-row">
+                <h2 class="header-text-deco" style="flex: 1">
 
                     ///<span class="header-text">CamelonSaaS</span>
                 </h2>
             </div>
 
             <nav class="flex-row" style="flex: 1; flex-flow: row-reverse;">
-                <a class="hover-anim" style="color:var(--pink-color)" href="http://" rel="noopener noreferrer">Hem</a>
-                <a class="hover-anim" href="http://" rel="noopener noreferrer">Om Oss</a>
-                <a class="hover-anim" href="http://" rel="noopener noreferrer">Funktioner</a>
-                <a class="hover-anim" href="http://" rel="noopener noreferrer">Priser</a>
                 <a class="hover-anim" href="http://" rel="noopener noreferrer">Kontakt</a>
+                <a class="hover-anim" href="http://" rel="noopener noreferrer">Priser</a>
+                <a class="hover-anim" href="http://" rel="noopener noreferrer">Funktioner</a>
+                <a class="hover-anim" href="http://" rel="noopener noreferrer">Om Oss</a>
+                <a class="hover-anim" style="color:var(--pink-color)" href="http://" rel="noopener noreferrer">Hem</a>
             </nav>
 
         </div>    
@@ -36,7 +36,7 @@
     <main>
         <div class="hero center-text">
             <div class="container container-medium flex-col">
-                <h1 class="fw-700 title">CAMELONSAAS <span class="fw-300">ÄR GRATIS</span></h1>
+                <h1 class="fw-700 title">CAMELONSAAS ÄR GRATIS</h1>
                 <p class="fw-300">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti eos nihil alias obcaecati mollitia ducimus error impedit earum aperiam! Sequi pariatur sunt ipsa nostrum reiciendis?</p>
                 <a class="btn fw-700 hover-anim" href="/">VISA MER</a>
             </div>
@@ -53,30 +53,30 @@
                 </div>
 
                 <!-- large container -->
-                <div class="container container-large flex-row">
+                <div class="container container-large flex-row flex-evenly">
 
-                    <div class="flex-col" style="flex: 1;">
+                    <div class="flex-col">
                         <div class="icon-border flex-center">                        
                             <img class="icon" src="images/krumelur.png" alt="krumelur">
                         </div>
                         <p class="fw-700" style="color:var(--pink-color)">HELT FLEXIBEL</p>
                     </div>
 
-                    <div class="flex-col" style="flex: 1;">
+                    <div class="flex-col">
                         <div class="icon-border flex-center">
                             <img class="icon" src="images/cart.png" alt="cart">
                         </div>
                         <p class="fw-700" style="color:var(--pink-color)">GRATIS NEDLADDNING</p>
                     </div>
 
-                    <div class="flex-col" style="flex: 1;">
+                    <div class="flex-col">
                         <div class="icon-border flex-center">
                             <img class="icon icon-large" src="images/pen.png" alt="pen">
                         </div>
                         <p class="fw-700" style="color:var(--pink-color)">MODERN DESIGN</p>
                     </div>
 
-                    <div class="flex-col" style="flex: 1;">
+                    <div class="flex-col">
                         <div class="icon-border flex-center">
                             <img class="icon icon-large" src="images/phone.png" alt="phone">
                         </div>
@@ -93,27 +93,123 @@
 
             <!-- medium container -->
             <div class="container container-large flex-col">
-                <img class="quote-mark quote-mark-ud" src="./images/quote-mark.svg" alt="quotemark">
-                    <h2 class="fw-300">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis eveniet incidunt consequuntur enim molestiae est accusamus ipsum hic dolorem illum, veritatis, facere delectus aliquid natus!
-                    </h2>
-                <img class="quote-mark" src="./images/quote-mark.svg" alt="quotemark">
+                <h2 class="fw-300 quote">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis eveniet incidunt consequuntur enim molestiae est accusamus ipsum hic dolorem illum, veritatis, facere delectus aliquid natus!
+                </h2>
             </div>
             
         </div>
 
-        <div class="info-box">
+        <div class="price-box center-text">
 
-            <!-- large container -->
+            <div class="container container-large flex-col">
+                
+                <!-- medium container -->
+                <div class="container container-medium flex-col">
+                    <h1 class="title function-title fw-300">Våra Priser</h1>
+                    <p class="fw-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, vero.</p>
+                </div>
 
-            <!-- large container for cards -->
+                <!-- large container -->
+                <div class="container container-large flex-row flex-evenly fw-700">
+
+                    <div class="price-card">
+                        <div class="price-card-top flex-col">
+                            <h1>0<span>kr</span></h1>
+                            <p>per månad</p>
+                        </div>
+                        <div class="price-card-middle flex-center">
+                            <p class="badge fw-700">FREEMIUM</p>
+                        </div>
+                        <div class="price-card-bottom flex-col fw-300">
+                            <div class="price-card-bottom-text flex-col">
+                                <p>1 Projekt</p>
+                                <p>100 MB Lagring</p>
+                                <p>Notification settings</p>
+                                <p>Password Protection</p>
+                            </div>
+                            <a class="price-btn fw-700 hover-anim" href="/">STARTA</a>
+                        </div>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-card-top" style="background-color: var(--pink-color);">
+                            <h1>390<span>kr</span></h1>
+                            <p>per månad</p>
+                        </div>
+                        <div class="price-card-middle flex-center" style="background: linear-gradient(0deg, rgba(255,255,255,1) 50%, var(--pink-color) 50%);">
+                            <p class="badge fw-700">STANDARD</p>
+                        </div>
+                        <div class="price-card-bottom flex-col fw-300">
+                            <div class="price-card-bottom-text flex-col">
+                                <p>15 Projekt</p>
+                                <p>1 GB Lagring</p>
+                                <p>Notification settings</p>
+                                <p>Password Protection</p>
+                            </div>
+                            <a class="price-btn fw-700 hover-anim" href="/">KÖP</a>
+                        </div>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-card-top">
+                            <h1>590<span>kr</span></h1>
+                            <p>per månad</p>
+                        </div>
+                        <div class="price-card-middle flex-center" style="flex: auto;">
+                            <p class="badge fw-700" >BUSINESS</p>
+                        </div>
+                        <div class="price-card-bottom flex-col fw-300">
+                            <div class="price-card-bottom-text flex-col">
+                                <p>30 Projekt</p>
+                                <p>2 GB Lagring</p>
+                                <p>Notification settings</p>
+                                <p>Password Protection</p>
+                            </div>
+                            <a class="price-btn fw-700 hover-anim" href="/">KÖP</a>
+                        </div>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-card-top">
+                            <h1>990<span>kr</span></h1>
+                            <p>per månad</p>
+                            
+                        </div>
+                        <div class="price-card-middle flex-center" style="flex: auto;">
+                            <p class="badge fw-700">PREMIUM</p>
+                        </div>
+                        <div class="price-card-bottom flex-col fw-300">
+                            <div class="price-card-bottom-text flex-col">
+                                <p>99+ Projekt</p>
+                                <p>99+ GB Lagring</p>
+                                <p>Notification settings</p>
+                                <p>Password Protection</p>
+                            </div>
+                            <a class="price-btn fw-700 hover-anim" href="/">KÖP</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="info-box">
+        <div class="blog-box center-text">
             
-            <!-- large container -->
+            <div class="container container-large flex-col">
+                <!-- medium container -->
+                <div class="container container-medium flex-col">
+                    <h1 class="title function-title fw-300">Våra senaste uppdateringar</h1>
+                    <p class="fw-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, vero.</p>
+                </div>
+                <!-- large container for blog posts -->
+                <div class="container container-large flex-row flex-evenly fw-700"></div>
+            </div>
+            
 
-            <!-- large container for blog posts -->
+            
 
         </div>
 
